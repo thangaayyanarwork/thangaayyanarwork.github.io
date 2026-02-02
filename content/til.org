@@ -2,8 +2,7 @@
 
 We can also name it ~Mini articles~
 ** 2026
-<<<<<<< HEAD
-*** Add watchers for clojure agent/atom/var/ref reference
+*** Add watchers for clojure agent/atom/var/ref reference <2026-02-02 Mon>
 - I really like the below example from the clojure docs
   - ref: https://clojuredocs.org/clojure.core/add-watch#example-549f17c0e4b09260f767ca7f
 #+begin_src clojure
@@ -26,16 +25,15 @@ We can also name it ~Mini articles~
   ;; "new-state" {:foo "bar"}
   ;; {:foo "bar"}
 #+end_src
-*** Ntfy notification from emacs [2026-01-07 Wed]
-=======
+
 *** Harper integration with Emacs for org mode [2026-01-28 Wed]
 #+begin_src elisp
   (with-eval-after-load 'eglot
     (add-to-list 'eglot-server-programs
 		 '(org-mode . ("harper-ls" "--stdio"))))
 #+end_src
+
 *** Ntfy notification from Emacs [2026-01-07 Wed]
->>>>>>> origin/main
 #+begin_src elisp
   (defun my/ntfy-send (message &optional title priority tags)
   "Send a notification to ntfy.sh."
